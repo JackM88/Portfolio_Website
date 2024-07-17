@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Prototype</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2955f893d9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="blog.html">Visit Blog</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Analyst</p>
+                <h1>Hi, I'm <span>Jack</span><br>and I can also do Web Design</h1>
+            </div>
+        </div>
+    </div>
+<!-------About---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/headshot.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am a dedicated professional with a degree in Information Technology from Liberty University and a strong
+                        foundation in problem-solving and critical thinking. My international experience has enhanced my
+                        adaptability and attention to detail. I am intrinsically motivated and inquisitive, seeking to improve
+                        processes and outcomes. With strong documentation and conflict resolution skills I ensure effective team
+                        dynamics. I have also held leadership roles as a Community Group Leader and a Resident Shepherd at Liberty University.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>HTML, CSS, Markdown</li>
+                            <li><span>Data Analytics</span><br>Excel,R,Tableau</li>
+                            <li><span>Database and App Development</span><br>SQLi,MSS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX</span><br>Web Development</li>
+                            <li><span>Data Analytics Intern</span><br>Samaritian's Purse</li>
+                            <li><span>Flask Ecommerce Capstone</span><br>Php, Flask, JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.S. in IT: Database and Application Development</span><br>Liberty University</li>
+                            <li><span>Data Analytics Certificate</span><br>Google</li>
+                            <li><span>Business Intelligence Certificate</span><br>Google</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-----Services---->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Web Design</h2>
+                <p>As a beginner in web design, I'm learning how to create visually appealing and functional websites. I'm diving into HTML, CSS, and JavaScript 
+                    to build the structure and style of web pages. Tools like Visual Studio Code help me design layouts and prototypes, making it easier to visualize 
+                    and communicate my ideas.</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-window-restore"></i>
+                <h2>UI/UX Design</h2>
+                <p>Starting my journey in UX/UI design, I'm discovering how to craft intuitive and engaging user experiences. Understanding user needs and behaviors helps me design 
+                    interfaces that are both aesthetically pleasing and easy to navigate. I'm also getting familiar with usability testing to gather feedback and improve designs. </p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h2>Data Analysis</h2>
+                <p> I'm learning programming languages like Python and R for data manipulation and statistical analysis. Tools like Tableau and Power BI 
+                    help me visualize data and create interactive dashboards that make complex information more understandable. I'm also acquainted with 
+                    SQL for database management. By developing these skills, I aim to transform data into actionable insights that can drive 
+                    informed decision-making and business strategies.</p>
+                    <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------portfolio----- -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/SearchEngine-1.jpeg">
+                <div class="layer">
+                    <h3>Website Search Engine</h3>
+                    <p>Utilize API and Web Development to collect news articles and blogs 
+                        based upon user input.</p>
+                        <a href="search_engine_page.html" target="_blank"><i class="icon-placeholder"></i>link</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/placeholderDB.jpg">
+                <div class="layer">
+                    <h3>Tableau Dashboard</h3>
+                    <p>Cleaned and merged large dataset and perfomred calucaltions 
+                        to discover distribution saturation of products.</p>
+                        <a href="#"><i class="icon-placeholder"></i>link</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/ToDo.png">
+                <div class="layer">
+                    <h3>Productivity Applications</h3>
+                    <p>Poromodo Timer, To Do list and Expense Tracking applications 
+                        used to track and management workflow.</p>
+                        <a href="#"><i class="icon-placeholder"></i>link</a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/JackM88" target="_blank" rel="noreferrer noopener" class="btn">See more</a>
+    </div>
+ </div>
+ <!-- --------contact------ -->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>jamoreework@gmail.com</p>
+                
+                <p><i class="fa-solid fa-phone"></i>434-477-4487</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/jack-moree-a49960267/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/JackM88" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="Images/Jack_Moree_Resume_2024.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>"In case I get a copyright"</p>
+    </div>
+  </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzYfvpOtZOhUtVRGku3vdqy3x0jLXlOc9_HOxgCKGKCR-km0xhPqU-oFlSjq5od_ox2DQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Submission received!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>

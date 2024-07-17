@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: #26bc8c;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .back-btn {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #fff;
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .home-btn{
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #fff;
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .main-content {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .blog-posts {
+            flex: 3;
+            margin-right: 20px;
+        }
+
+        .blog-post {
+            background: #f4f4f4;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .blog-post img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .blog-post h2 {
+            margin-top: 10px;
+            color: black;
+        }
+
+        .blog-post p {
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .sidebar {
+            flex: 1;
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .sidebar h3 {
+            margin-top: 0;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="javascript:history.back()" class="back-btn">Back</a> 
+            <a href="index.html" class="home-btn">Home</a>
+            <h1>Blog</h1>
+        </div>
+    </header>
+    <div class="container main-content">
+        <div class="blog-posts">
+            <div class="blog-post">
+                <img src="Images/soccer_blog_tn.webp" alt="Blog Post 1">
+                <h2>The Beautiful Game - Why Soccer Captivates the World</h2>
+                <p>Soccer, known as football outside of North America, is more than just a sport—it's a global phenomenon that unites millions. 
+                    From the bustling streets of Rio de Janeiro to the quiet villages in rural Africa, 
+                    soccer is a universal language spoken by all....</p>
+                <a href="soccer.html">Read More</a>
+            </div>
+            <div class="blog-post">
+                <img src="Images/mindful_tn.jpg" alt="Blog Post 2">
+                <h2>Embracing Mindfulness - The Path to a Balanced Life</h2>
+                <p>In today's fast-paced world, finding balance and peace can be challenging. Mindfulness, the 
+                    practice of being present and fully engaged in the moment, offers a powerful tool to help navigate the chaos of modern life....</p>
+                <a href="mindful.html">Read More</a>
+            </div>
+            <script>
+                window.onload = function() {
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+        img.style.width = '300px';
+        img.style.height = '200px';
+        img.style.objectFit = 'cover';
+    });
+};
+            </script>
+        <!-- </div>
+        <aside class="sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Category 1</a></li>
+                <li><a href="#">Category 2</a></li>
+                <li><a href="#">Category 3</a></li>
+            </ul>
+        </aside>
+    </div> -->
+    <!-- <footer>
+        <div class="container">
+            <p>If I get a copyright.</p>
+        </div>
+    </footer> -->
+</body>
+</html>
