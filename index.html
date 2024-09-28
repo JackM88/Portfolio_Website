@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Prototype</title>
-    <link rel="stylesheet" href="/Styles/style.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="./script.js"></script> -->
     <script src="https://kit.fontawesome.com/2955f893d9.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -169,9 +170,8 @@
     </div>
   </div>
 
-
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
 
         function opentab(tabname){
@@ -184,20 +184,8 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
-    </script>
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
 
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
-        function closemenu(){
-            sidemenu.style.right = "-200px";
-        }
-    </script>
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzYfvpOtZOhUtVRGku3vdqy3x0jLXlOc9_HOxgCKGKCR-km0xhPqU-oFlSjq5od_ox2DQ/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzYfvpOtZOhUtVRGku3vdqy3x0jLXlOc9_HOxgCKGKCR-km0xhPqU-oFlSjq5od_ox2DQ/exec'
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById('msg')
   
@@ -213,7 +201,15 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
-  </script>
 
+    var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+  </script>
 </body>
 </html>

@@ -1,0 +1,221 @@
+       /*------- blog-page----------- */
+
+       body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: #26bc8c;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .back-btn {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #fff;
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .home-btn{
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #fff;
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .main-content {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .blog-posts {
+            flex: 3;
+            margin-right: 20px;
+        }
+
+        .blog-post {
+            background: #f4f4f4;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .blog-post img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .blog-post h2 {
+            margin-top: 10px;
+            color: black;
+        }
+
+        .blog-post p {
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .sidebar {
+            flex: 1;
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .sidebar h3 {
+            margin-top: 0;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+
+     /*------- mindful-page----------- */
+     body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 0 20px;
+    }
+
+    header {
+        background: #26bc8c;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        position: relative;
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
+    .back-btn {
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #fff;
+        color: #333;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .home-btn{
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #fff;
+        color: #333;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+
+    /* ------------soccer.page------------ */
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 0 20px;
+    }
+
+    header {
+        background: #26bc8c;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        position: relative;
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
+    .back-btn {
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #fff;
+        color: #333;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .home-btn{
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #fff;
+        color: #333;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    
