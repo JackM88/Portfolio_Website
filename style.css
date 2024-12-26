@@ -10,7 +10,6 @@ html{
 body{
     background: #080808;
     color: #fff;
-
 }
 #header{
     width: 100%;
@@ -324,7 +323,7 @@ nav .fa-bars{
 /* --------css for small screen (responsivness)---- */
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(./Images/phone_background.jpg);
+        background-image: url(./Images/background.jpg);
     }
     .header-text{
         margin-top: 100%;
